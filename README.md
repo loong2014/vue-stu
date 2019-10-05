@@ -21,4 +21,11 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-# 1 配置element-ui
+# 代码提示
+npm install vue-snippets
+
+# 配置element-ui 按需引入
+http://element-ui.cn/#/zh-CN/component/quickstart
+
+
+

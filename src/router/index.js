@@ -5,7 +5,7 @@ import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
-const _import = require('./import-' + process.env.NODE_ENV)
+const _import = file => require('@/views/' + file + '.vue').default
 
 // 全局路由
 const globalRoutes = [

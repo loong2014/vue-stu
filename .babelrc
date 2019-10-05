@@ -12,19 +12,15 @@
           ]
         }
       }
-    ],
-    "stage-2"
+    ]
   ],
   "plugins": [
-    "transform-vue-jsx",
-    "transform-runtime",
     [
       "component",
-      [
-        {
-          "libraryName": "element-ui"
-        }
-      ]
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
     ]
   ]
 }
