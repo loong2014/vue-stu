@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h3>入口页面</h3>
+      <h3>主页面</h3>
 
       <h2>{{loginName}}</h2>
     </div>

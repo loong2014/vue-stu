@@ -59,7 +59,8 @@ export default {
             })
             .then(({ data }) => {
               if (data && data.code === 0) {
-                this.$router.replace({ name: "404" });
+                this.$store.commit('user/updateName', this.dataForm.userName)
+                this.$router.replace({ name: "main" });
               } else {
                 // this.$message.error(data.msg);
               }

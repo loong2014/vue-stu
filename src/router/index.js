@@ -27,12 +27,25 @@ const globalRoutes = [
   }
 ]
 
-const helloWorldRoute = {
-  path: '/',
-  name: 'HelloWorld',
-  component: HelloWorld
+// 主入口路由
+const mainRoute = {
+  path: '/main',
+  component: _import('main'),
+  name: 'main',
+  redirect: { name: 'home' },
+  meta: { title: '主入口' },
+  children: [
+    {
+      path: '/home',
+      component: _import('common/home'),
+      name: 'home',
+      meta: {
+        title: '首页'
+      }
+    }
+  ]
 }
 
 export default new Router({
-  routes: globalRoutes.concat(helloWorldRoute)
+  routes: globalRoutes.concat(mainRoute)
 })
